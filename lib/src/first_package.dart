@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 
 class FirstPackage extends StatefulWidget {
@@ -19,10 +21,10 @@ class FirstPackage extends StatefulWidget {
   String subTitle;
   EdgeInsets margin;
 
-  TextStyle? titleTextStyle =
-      TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold);
-  TextStyle? subTitleTextStyle =
-      TextStyle(color: Colors.black, fontSize: 16, fontWeight: FontWeight.w400);
+  TextStyle? titleTextStyle = const TextStyle(
+      color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold);
+  TextStyle? subTitleTextStyle = const TextStyle(
+      color: Colors.black, fontSize: 16, fontWeight: FontWeight.w400);
 
   BoxShape shape;
 
@@ -52,7 +54,7 @@ class _FirstPackageState extends State<FirstPackage> {
                   shape: widget.shape,
                   image: DecorationImage(image: NetworkImage(widget.imgUrl)),
                 )),
-            Spacer(),
+            const Spacer(),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
