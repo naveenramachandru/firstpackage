@@ -1,7 +1,7 @@
 name: first_package
-description: A new Flutter package project.
-version: 0.0.1
-homepage: "https://github.com/naveenramachandru/firstpackage.git"
+description: A Flutter package for both android and iOS.
+version: 0.0.2
+homepage: https://github.com/naveenramachandru/firstpackage.git
 
 environment:
   sdk: ">=2.19.4 <3.0.0"
